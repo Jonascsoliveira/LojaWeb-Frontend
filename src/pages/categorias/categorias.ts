@@ -19,7 +19,7 @@ import { CategoriaService } from '../../services/domain/categoria.service';
 export class CategoriasPage {
 
   bucketUrl: string = API_CONFIG.bucketBaseUrl;
-  
+
   items: CategoriaDTO[];
 
   constructor(public navCtrl: NavController, 
@@ -33,7 +33,7 @@ export class CategoriasPage {
       this.items = response;
     },
     error => {
-      console.log(error);
+      
     });
   }
 
